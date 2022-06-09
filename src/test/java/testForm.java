@@ -8,21 +8,20 @@ import org.junit.jupiter.api.Test;
 
 import java.io.File;
 
-public class Testform {
+public class testForm {
 
     @BeforeAll
     static void beforeAll() {
         //Запускал в firefox, в chrome не пашет, не видит кнопку Submit
         Configuration.browser = "firefox";
-        //Configuration.baseUrl = "https://demoqa.com/automation-practice-form";
+        Configuration.baseUrl = "https://demoqa.com/automation-practice-form";
         //Configuration.browserSize = "1920x1080";
     }
-
     @Test
         void SuccessFieldTextBox(){
 
                 //"открываю сайт
-        open ("https://demoqa.com/automation-practice-form");
+        //open ("https://demoqa.com/automation-practice-form");
 
                 // Заполняю поля Name
         $("[id=firstName]").setValue("ilgiz");
